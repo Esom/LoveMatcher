@@ -22,8 +22,10 @@ https://docs.djangoproject.com/en/1.8/ref/settings/
 from django.conf import settings
 
 if not settings.DEBUG:
+
 	import os
 	postgre_password = os.environ["postgre_password"]
+	lovematcher_secret_key = os.environ["lovematcher_secret_key"]
 
 
 	BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
@@ -33,7 +35,7 @@ if not settings.DEBUG:
 	# See https://docs.djangoproject.com/en/1.8/howto/deployment/checklist/
 
 	# SECURITY WARNING: keep the secret key used in production secret!
-	SECRET_KEY = 'ws#k_mn37ocdvt3&qipz-cu+u$&k-q!h6i6ez3v)&ctqg#024x'
+	SECRET_KEY = lovematcher_secret_key
 
 	# SECURITY WARNING: don't run with debug turned on in production!
 	DEBUG = False

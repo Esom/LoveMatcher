@@ -11,5 +11,16 @@ class Question(models.Model):
 	timestamp = models.DateTimeField(auto_now_add=True,auto_now=False)
 
 
-def __unicode__(self):
-	return self.text[:10]
+	def __unicode__(self):
+		return self.text[:10]
+
+
+class Answer(models.Model):
+	question  = models.ForeignKey(Question)
+	text = models.TextField(max_length=120)
+	active = models.BooleanField(default=True)
+	draft = models.BooleanField(default=False)
+	timestamp = models.DateTimeField(auto_now_add=True,auto_now=False)
+
+	def __unicode__(self):
+		return self.text[:10]

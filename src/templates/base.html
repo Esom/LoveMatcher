@@ -1,0 +1,202 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Knowledge</title>
+
+    <!-- CSS -->
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+
+    {% include 'css.html' %}
+</head>
+<body>
+
+<!-- Header -->
+<header id="hero" class="hero overlay">
+    {% include 'navbar.html' %}
+    <div class="masthead text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                    {% block content %}
+                    {% endblock %}
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+<!-- Features -->
+<section id="features" class="features bgc-light-gray">
+    <div class="container ">
+        <div class="row features-section">
+            <div class="text-center col-sm-4">
+                <div class="media-body">
+                    <span class="icon"><img src="{% static 'images/icon/icon1.png' %}" alt=""></span>
+                    <h3>Help & Documentation</h3>
+                    <p class="text-muted">Unlike other Frameworks which try to cover everything, It has been built specifically for wordpress</p>
+                </div>
+            </div>
+            <div class="text-center col-sm-4">
+                <div class="media-body">
+                    <span class="icon"><img src="{% static 'images/icon/icon2.png' %}" alt=""></span>
+                    <h3>Developer Resources</h3>
+                    <p class="text-muted">An incredibly codex has been created for you to use as reference when developing extensions</p>
+                </div>
+            </div>
+            <div class="text-center col-sm-4">
+                <div class="media-body">
+                    <span class="icon"><img src="{% static 'images/icon/icon3.png' %}" alt=""></span>
+                    <h3>Community Support</h3>
+                    <p>The source code is available on GitHub, you can grab it and twist it to your heart’s content</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Topics -->
+<section class="topics">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8">
+                <header>
+                    <h2><span class="icon-pages"></span>Explore Topics</h2>
+                    <p>We did our best to cover all topics related to this product. Each section have number which represent number of topic in each category.</p>
+                </header>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="topics-list">
+                            <h3><a href="#"><span class="badge">19</span>Introduction</a></h3>
+                            <ul>
+                                <li><a href="single.html"> How to use this documentation? </a></li>
+                                <li><a href="single.html"> How to find topics? </a></li>
+                                <li><a href="single.html"> What is included and why? </a></li>
+                                <li><a href="single.html"> Basic knowledge requirments. </a></li>
+                                <li><a href="single.html"> Getting Started & What is next. </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="topics-list">
+                            <h3><a href="#"><span class="badge">7</span>Intallation & Activation</a></h3>
+                            <ul>
+                                <li><a href="#"> How to use this documentation? </a></li>
+                                <li><a href="#"> How to find topics? </a></li>
+                                <li><a href="#"> What is included and why? </a></li>
+                                <li><a href="#"> Basic knowledge requirments. </a></li>
+                                <li><a href="#"> Getting Started & What is next. </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="topics-list">
+                            <h3><a href="#"><span class="badge">5</span>Import & Export</a></h3>
+                            <ul>
+                                <li><a href="#"> How to use this documentation? </a></li>
+                                <li><a href="#"> How to find topics? </a></li>
+                                <li><a href="#"> What is included and why? </a></li>
+                                <li><a href="#"> Basic knowledge requirments. </a></li>
+                                <li><a href="#"> Getting Started & What is next. </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="topics-list">
+                            <h3><a href="#"><span class="badge">17</span>Settings & Configuration</a></h3>
+                            <ul>
+                                <li><a href="#"> How to use this documentation? </a></li>
+                                <li><a href="#"> How to find topics? </a></li>
+                                <li><a href="#"> What is included and why? </a></li>
+                                <li><a href="#"> Basic knowledge requirments. </a></li>
+                                <li><a href="#"> Getting Started & What is next. </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="sidebar">
+                    <div class="widget widget-support-forum">
+                        <span class="icon icon-forum"></span>
+                            <h4>Looking for help? Join Community</h4>
+
+                            <p>Couldn’t find what your are looking for ? Why not join out support forums and let us help you.</p>
+
+
+                        <a href="#" class="btn btn-success">Support Forum</a>
+                    </div>
+
+                <!--******************************* Lists *******************************-->
+
+                    <div class="pt-50">
+                        <div class="topics-list">
+                            <h3><a href="#"><span class="badge">10</span>API Guide Lines</a></h3>
+                            <ul>
+                                <li><a href="#"> How to use this documentation? </a></li>
+                                <li><a href="#"> How to find topics? </a></li>
+                                <li><a href="#"> What is included and why? </a></li>
+                                <li><a href="#"> Basic knowledge requirments. </a></li>
+                                <li><a href="#"> Getting Started & What is next. </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+             </div>
+            <div class="topics-btn text-center">
+                <a class="btn btn-default" href="archive.html"><span class="icon-adn"></span> Explore All Topics</a>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- Support Section -->
+<section class="support-section text-white section ">
+    <div class="container">
+        <div class="row">
+            <div class="divider"><i class="fa fa-support"></i></div>
+            <header class="text-center">
+                <h2 class="section-title">Get Support From Real People</h2>
+                <p class="section-subtitle">When you are stuck in something don’t waste your time just let us know we are here to help you</p>
+            </header>
+                <ul class="members">
+                    <li><img src="assets/images/u1.png" alt=""></li>
+                    <li><img src="assets/images/u2.png" alt=""></li>
+                    <li><img src="assets/images/u3.png" alt=""></li>
+                    <li><img src="assets/images/u4.png" alt=""></li>
+                    <li><img src="assets/images/u5.png" alt=""></li>
+                </ul>
+        </div>
+    </div>
+</section>
+
+<!-- Call To Action -->
+<section class="section">
+    <div class="container">
+        <div class="row call-to-action">
+
+                <div class="col-lg-1">
+                     <span class="icon icon-envelope"></span>
+                </div>
+                <div class="col-lg-9">
+                <h3>Contact Us</h3>
+                <p>If you have question which is beyond this knowledgebase Kindly contact us</p>
+                </div>
+            <div class="col-lg-2">
+                <a href="#" class="btn btn-success btn-action">Write to Us Now</a>
+                </div>
+
+        </div>
+    </div>
+</section>
+    {% include 'footer.html' %}
+    {% include 'javascript.html' %}
+</body>
+</html>

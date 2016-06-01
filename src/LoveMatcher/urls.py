@@ -18,7 +18,7 @@ from django.contrib import admin
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^$', 'questions.views.home', name='home'),
+    #url(r'^$', 'questions.views.single', name='question_single'),
     url(r'^questions$', 'questions.views.home', name='home'),
     url(r'^questions/(?P<id>\d+)$', 'questions.views.single', name='question_single'),
 ]

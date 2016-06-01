@@ -5,8 +5,6 @@
 {% block content %}
 
 
-
-
 <form method='POST' action='' > {% csrf_token %}
 {{ form.errors }}
 <h1>{{ instance.text }}</h1>
@@ -33,10 +31,11 @@ Importance: {{ form.their_importance_level }} <br/><br/>
 
 <input type='submit' value='Save and continue' />
 
-
-
 </form>
 
-
-
+<style>
+	h3,form,input[type="radio"]{color:white;}
+	input[type="submit"] {color: black;}
+	select {color: black;}
+</style>
 {% endblock %}

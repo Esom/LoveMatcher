@@ -13,7 +13,6 @@ def single(request,id):
 		if form.is_valid():
 			print form.cleaned_data
 			#print request.POST
-
 			question_id = form.cleaned_data.get('question_id') #form.cleaned_data['question_id']
 			answer_id = form.cleaned_data.get('answer_id')
 			importance_level = form.cleaned_data.get('importance_level')
@@ -31,8 +30,8 @@ def single(request,id):
 			new_user_answer.my_answer_importance = importance_level
 
 			if their_answer_id != -1:
-				their_answer_istance = Answer.objects.get(id=their_answer_id)
-				new_user_answer.their_answer = their_answer_istance
+				their_answer_instance = Answer.objects.get(id=their_answer_id)
+				new_user_answer.their_answer = their_answer_instance
 				new_user_answer.their_importance = their_importance_level
 			else:
 				new_user_answer.their_importance = "Not Important"

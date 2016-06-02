@@ -43,13 +43,14 @@ def single(request,id):
 			user_answer.my_answer_importance = importance_level
 
 			if their_answer_id != -1:
-				their_answer_instance = Answer.objects.get(id=their_answer_id)
-				user_answer.their_answer = their_answer_instance
+				their_answer_istance = Answer.objects.get(id=their_answer_id)
+				user_answer.their_answer = their_answer_istance
 				user_answer.their_importance = their_importance_level
 			else:
-				user.their_answer = none
+				user_answer.their_answer = None
 				user_answer.their_importance = "Not Important"
 			user_answer.save()
+
 			next_q = Question.objects.all().order_by("?").first()
 			return redirect("question_single",id=next_q.id)
 
